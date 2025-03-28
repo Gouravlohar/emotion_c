@@ -27,6 +27,13 @@ def predict_emotion(text):
 # Streamlit UI
 st.title("Twitter Emotion Sentiment Analysis")
 st.write("Enter a tweet below to predict its emotion.")
+st.subheader("Example tweets to try:")
+
+st.markdown("> 1. I feel scared and anxious about the future.")
+st.markdown("> 2. I love spending time with my family.")
+st.markdown("> 3. I feel so alone and lost right now.")
+st.markdown("> 4. Life has its ups and downs, you just deal with it.")
+st.markdown("> 5. I love using this new AI tool! It's amazing.")
 
 # User input
 user_input = st.text_area("Enter a tweet:", "")
